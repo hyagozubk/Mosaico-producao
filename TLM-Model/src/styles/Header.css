@@ -1,0 +1,28 @@
+/* src/components/Header.css */
+.header {
+    background-color: white;
+    color: black;
+    display: flex;
+    height: 100px; /* Aumente conforme necessário */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adicione um preenchimento lateral para espaço */
+    margin-bottom: 20px; /* Aumente o espaçamento inferior */
+}
+  
+  .header-nav {
+    list-style: none;
+    display: flex;
+  }
+  
+  .header-nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .header-logo {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+  }

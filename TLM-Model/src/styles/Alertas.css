@@ -1,0 +1,21 @@
+.alertas-container {
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    z-index: 10000000;
+  }
+  
+  .alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .alert-success {
+    background-color: #4CAF50;
+  }
+  
+  .alert-error {
+    background-color: #f44336;
+  }

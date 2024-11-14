@@ -1,0 +1,283 @@
+.icon-editor-container {
+
+  border-radius: 8px;
+  width: 100%;
+  padding-left: 1%;
+}
+
+.icon-editor-title {
+  text-align: left;
+  color: #373e4a;
+  /* Mantido o valor único */
+  margin: 20px 0 20px 5px;
+  /* Simplificado para margem superior e inferior */
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: inherit;
+}
+
+.icon-editor-form {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  gap: 10px;
+  /* position: relative; */
+  padding-right: 37%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* Adiciona um underline suave entre os elementos */
+.icon-editor-form>* {
+  position: relative;
+  /* Necessário para o pseudo-elemento */
+}
+
+.icon-editor-form>*:not(:last-child)::after {
+  content: "";
+  /* Cria um pseudo-elemento vazio */
+  position: absolute;
+  left: 0;
+  /* Alinha à esquerda */
+  right: 0;
+  /* Alinha à direita */
+  bottom: -5px;
+  /* Posiciona o underline abaixo do elemento */
+  height: 1px;
+  /* Espessura do underline */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Cor suave para o underline */
+  transition: background-color 0.3s;
+  /* Suaviza a transição ao passar o mouse */
+}
+
+
+
+.icon-editor-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+  width: 313px;
+
+}
+
+.select {
+  width: 420px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0%;
+}
+
+.select-icon {
+  width: 313px;
+}
+
+.select-icon-modify {
+  width: 300px;
+  margin-left: 5px;
+}
+
+.icon-editor-input {
+  margin-left: 8px;
+  width: 313px;
+  height: 15px;
+}
+
+.icon-editor-input-file {
+  padding: 5px;
+}
+
+
+
+/* Botão */
+.icon-editor-button-salvar {
+  background: #202959;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  margin-top: 0px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.icon-editor-button-salvar2 {
+  background: #202959;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  margin-top: -50px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.icon-editor-button-atualizar {
+  background: #202959;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    border-radius: 25px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-editor-button-deletar {
+  background: #202959;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  margin-top: -50px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-editor-button:hover {
+  background-color: #1a1f3c;
+  /* Sombra mais clara ao passar o mouse */
+}
+
+body {
+  background: #DADADA;
+  padding-right: 2%;
+}
+
+.icon-editor-label-title {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fundo semi-transparente para o formulário */
+  border-radius: 2px;
+  width: 100%;
+  box-shadow: 0px 2px 11px 2px rgba(0, 54, 130, 0.53) !important;
+  /* Usar rgba para maior clareza */
+  padding-bottom: 1px;
+  /* Corrigido para lowercase */
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 1px;
+}
+#botao-voltar{
+  background: #202959;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 130%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 25px;
+  margin-left: -215%;
+  margin-top: -17%;
+  cursor: pointer;
+}
+#botao-deletar {
+  background: #202959;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 10%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  margin-right: 27%;
+  margin-bottom: 0px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  z-index: 10000;
+}
+#botao-modificar {
+  background: #202959;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 10%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-right: 13.5%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  z-index: 10000;
+}
+#botao-salvar {
+  background: #202959;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 10%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: -50px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.editar-mosaico{
+    background: #202959;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin-bottom: 0px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.voltar-mosaic {
+  margin-top: -49px;
+  text-align: center;
+  background: #202959;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 10%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  margin-right: 40%;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+
+.icon-editor-img-preview{
+  width: 55px;
+  height: 55px;
+
+}
+
+.view-icon {
+  margin-right: -200px;
+  margin-top: -70px;
+}
+
+.view-icon-mosaic2 {
+  margin-right: -222px;
+  margin-top: -68px;
+}
