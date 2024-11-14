@@ -37,10 +37,10 @@ const App = () => {
             <Route path="/" element={<Login onLogin={handleLogin} />} />
           ) : (
             <>
-              <Route path="/TLM-Producao" element={<Grid />} />
-              <Route path="/TLM-Producao/Editor" element={<Editor />} />
-              <Route path="/TLM-Producao/Mosaiceditor" element={<MosaicForm />} />
-              <Route path="/" element={<Navigate to="/TLM-Producao" />} />
+              <Route path="/Mosaico-producao" element={<Grid />} />
+              <Route path="/Mosaico-producao/Editor" element={<Editor />} />
+              <Route path="/Mosaico-producao/Mosaiceditor" element={<MosaicForm />} />
+              <Route path="/" element={<Navigate to="/Mosaico-producao" />} />
               <Route path="*" element={<Navigate to="/" />} />
             </>
           )}
